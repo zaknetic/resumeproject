@@ -1,0 +1,29 @@
+{% extends 'core/base.html' %} 
+{% load static %} 
+{% block content %}
+<div class="mt-5">
+<div class="text-center">
+  <img
+  src="{% static 'core/images/file.png' %}"
+  alt="Profilepic"
+  class="img-thumbnail"
+  width="150px"
+  height="50px"
+/>
+</div>
+  <div class="mt-5 text-white mx-5 text-justify">
+    <h1 class="font-weight-bold satisfy-regular">Hello,</h1>
+    <div class="px-4" style="line-height:2rem;">
+      <p style="text-indent:100px"> I am <b class="text-warning"> Md Zakaria Hossain</b>. I am a web developer. I have completed my graduation from <b class="text-warning"> Daffodil International University</b>. I have been working as a web developer for the last 2 years. I have developed many websites. 
+        <p>I have worked with various technologies including HTML, CSS, JavaScript, and Django. I have also worked with various frameworks including Bootstrap and Tailwind CSS. I have also worked with various libraries including jQuery. I have also worked with various databases including MySQL and SQLite. </p>
+          <p>I have also worked with various version control systems including Git. I have also worked with various hosting providers including Heroku. </p>
+      </p>
+    </div>
+  </div>
+  <div class="text-center">
+    <a href="{% url 'contract' %}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+    <a href="{% url 'contract' %}" class="btn btn-outline-info my-3">Contact</a>
+  
+  </div>
+</div>
+{% endblock content %}
